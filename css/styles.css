@@ -1,1 +1,89 @@
-.card {}
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7A9B67;
+}
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+h5 {
+    font-size: 10px;
+    font-weight: 400;
+}
+body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+.user img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.search {
+    height: 50px;
+    width: 349px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 5px 16px #989898;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+.search_icon, .search_text {
+    position: absolute;
+}
+.card {
+    width: 160px;
+    height: 188px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px #dbdbdb;
+    border-radius: 16px;
+    text-align: center;
+}
+.card h5 {
+    font-weight: 600;
+}
+.container {
+    width: 393px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.catSeeAll {
+    display: flex;
+    justify-content: space-between;
+}
+.topCategories h4 {
+    font-weight: 600;
+    color: #7A9B67;
+}
+.categories {
+    display: flex;
+    justify-content: space-around;
+    color: #7A9B67;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    text-align: center;
+}
+.sizePrice {
+    display: flex;
+    justify-content: space-between;
+}
+.heart {
+    float: right;
+    position: absolute;
+    top: 50;
+}
+.recommended {
+
+}
