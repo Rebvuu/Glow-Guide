@@ -25,17 +25,18 @@ body {
 .search {
     height: 50px;
     width: 349px;
-    background-color: rgb(255, 0, 0);
+    background-color: white;
     box-shadow: 0px 5px 16px #989898;
     border-radius: 8px;
-    display: flex;
+    text-align: left;
     flex-direction: row;
-    position: relative;
-    justify-content: center;
-    text-align: center;
+    padding-left: 20px;
 }
 .search_icon, .search_text {
-    position: absolute;
+    display: inline-block;
+}
+.search_text {
+    padding-left: 10px;
 }
 .card {
     width: 160px;
