@@ -6,8 +6,28 @@
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
             <meta name="viewport" content="width=device-width, initial-scale=1">
         </head>
+        <!-- changes the colour of the heart when you click it -->
+        <script>
+        function changeHeart() {
+            var image = document.getElementById('heart_img');
+            if (image.src.match("images//unsaved.png")) {
+                image.src = "images//saved.png";
+            } else {
+                image.src = "images//unsaved.png";
+            }
+        }
+        function changeHeart_2() {
+            var image = document.getElementById('heart_img_2');
+            if (image.src.match("images//unsaved.png")) {
+                image.src = "images//saved.png";
+            } else {
+                image.src = "images//unsaved.png";
+            }
+        }
+        </script>
         <body>
-            <div class="user"><!--this user class contains the profile picture, search bar, and greeting-->
+            <!--this user div contains the profile picture, search bar, and greeting-->
+            <div class="user">
                 <h4>Good night👋</h4>
                 <h2>Rebecca</h2>
                 <img src="images//profile.png" alt="profile picture" width="46" height="46">
@@ -20,7 +40,8 @@
                     <p>Search products</p>
                 </div>
             </div>
-            <div class="topCategories"><!--this is the container for the category icons-->
+            <!--this is the container for the category icons-->
+            <div class="topCategories">
                 <div class="catSeeAll">
                     <h2>Top Categories</h2>
                     <h4>See all</h4>
@@ -46,10 +67,11 @@
             </div>
             <div class="popular">
                 <h2>What's Popular</h2>
-                <div class="container"><!--contains the retinol youth renewal serum cards-->
+                <!--contains the retinol youth renewal serum cards-->
+                <div class="container">
                     <div class="card">
                         <div class="heart">
-                            <img src="images//unsaved.png" alt="heart" height="25" width="25">
+                            <img id="heart_img" src="images//unsaved.png" alt="heart" height="25" width="25" onClick="changeHeart()">
                         </div>
                         <img src="images//murad.png" alt="murad serum" height="110" width="102">
                         <h5>Retinol Youth Renewal Serum</h5>
@@ -60,7 +82,7 @@
                     </div>
                     <div class="card">
                         <div class="heart">
-                            <img src="images//unsaved.png" alt="heart" height="25" width="25">
+                            <img id="heart_img_2" src="images//unsaved.png" alt="heart" height="25" width="25" onClick="changeHeart_2()">
                         </div>
                         <img src="images//murad.png" alt="murad serum" height="110" width="102">
                         <h5>Retinol Youth Renewal Serum</h5>
@@ -87,5 +109,8 @@
                 <img src="images//savednav.png" alt="heart icon" height="50" width="31">
                 <img src="images//profilenav.png" alt="user icon" height="50" width="32">
             </div>
+            <!-- script tags -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script> src="js/index.js"</script>
         </body>
     </html>
